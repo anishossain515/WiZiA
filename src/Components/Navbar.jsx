@@ -35,8 +35,10 @@ function NavbarArea() {
 
       {/* NavbarButton */}
       <NavbarContent justify="end">
-
+         
+        {/* Toggle button  */}
       <NavbarMenuToggle aria-label={isMenuOpen ? 'Close menu' : 'Open menu'} className="text-white md:hidden" />
+         {/* Toggle button  */}
 
         <NavbarItem className="md:flex hidden">
           <Button as={Link} className="bg-Aqua text-dark_teal font-medium md:flex hidden rounded-[100px]  shadow-glow" >Book a Demo</Button>
@@ -49,7 +51,8 @@ function NavbarArea() {
         </NavbarItem>
 
       </NavbarContent>
-
+     
+     {/*MenuBar*/}
       <NavbarMenu>
          {NavbarItems.map((item,index)=>(
           <NavbarMenuItem key={index}>
