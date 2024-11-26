@@ -1,6 +1,7 @@
 import './App.css'
 import Hero from './Components/Hero';
 import NavbarArea from './Components/Navbar';
+import Partners from './Components/Partners';
 function App() {
 
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavbarArea/>
       <div>
         <Hero/>
+        <Partners/>
       </div>
     </main>
   )
