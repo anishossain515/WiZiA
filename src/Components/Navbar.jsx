@@ -72,7 +72,7 @@ function NavbarArea() {
           <Button
             as={Link}
             variant="bordered"
-            className="rounded-[100px] shadow-glow text-white font-medium"
+            className="rounded-[100px] shadow-glow text-dark_teal font-medium border-dark_teal"
           >
             Contact Us
           </Button>

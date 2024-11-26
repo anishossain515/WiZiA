@@ -16,7 +16,8 @@ export default {
         glow: '0px 0px 16px 0px #53FFFC33'
       },
       fontFamily:{
-        work_Sans:'"Work Sans", sans-serif'
+        work_Sans:'"Work Sans", sans-serif',
+        Montserrat:'"Montserrat", sans-serif'
       }
     },
 
