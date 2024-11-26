@@ -64,15 +64,15 @@ function NavbarArea() {
       </NavbarContent>
 
       {/*MenuBar*/}
-      <NavbarMenu>
+      <NavbarMenu className='bg-[#063740]'>
         {NavbarItems.map((item, index) => (
-          <NavbarMenuItem key={index}>{item}</NavbarMenuItem>
+          <NavbarMenuItem key={index} className="text-white">{item}</NavbarMenuItem>
         ))}
         <NavbarMenuItem className="space-x-4 pt-2">
           <Button
             as={Link}
             variant="bordered"
-            className="rounded-[100px] shadow-glow text-dark_teal font-medium border-dark_teal"
+            className="rounded-[100px] shadow-glow font-medium text-white"
           >
             Contact Us
           </Button>
