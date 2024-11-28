@@ -5,15 +5,20 @@ import {
   NavbarContent,
   NavbarMenu,
   NavbarItem,
-  Link,
   Button,
   NavbarMenuToggle,
   NavbarMenuItem,
 } from "@nextui-org/react";
+import { Link } from "react-router-dom";
 function NavbarArea() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const NavbarItems = ["About Us", "Pricing", "Customers", "Solutions"];
+  const NavbarItems = [
+    { name: "About Us", path: "/UpComing" },
+    { name: "Pricing", path: "/UpComing" },
+    { name: "Customers", path: "/UpComing" },
+    { name: "Solutions", path: "/UpComing" },
+  ];
 
   return (
     <Navbar
@@ -30,8 +35,12 @@ function NavbarArea() {
       {/* NavbarList */}
       <NavbarContent className="text-white hidden md:flex cursor-pointer">
         {NavbarItems.map((item, index) => (
-          <NavbarItem key={index}>{item}</NavbarItem>
-        ))}
+            <NavbarItem key={index}>
+              <Link to={item.path} className="text-white">
+                {item.name}
+              </Link>
+            </NavbarItem>
+          ))}
       </NavbarContent>
 
       {/* NavbarButton */}
@@ -45,7 +54,6 @@ function NavbarArea() {
 
         <NavbarItem className="md:flex hidden">
           <Button
-            as={Link}
             className="bg-Aqua text-dark_teal font-medium md:flex hidden rounded-[100px]  shadow-glow"
           >
             Book a Demo
@@ -54,7 +62,7 @@ function NavbarArea() {
 
         <NavbarItem className="md:flex hidden">
           <Button
-            as={Link}
+        
             variant="bordered"
             className="rounded-[100px] shadow-glow text-white font-medium"
           >
@@ -70,14 +78,12 @@ function NavbarArea() {
         ))}
         <NavbarMenuItem className="space-x-4 pt-2">
           <Button
-            as={Link}
             variant="bordered"
             className="rounded-[100px] shadow-glow font-medium text-white"
           >
             Contact Us
           </Button>
           <Button
-            as={Link}
             className="bg-Aqua text-dark_teal font-medium rounded-[100px]  shadow-glow"
           >
             Book a Demo
