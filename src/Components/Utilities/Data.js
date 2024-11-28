@@ -15,3 +15,21 @@ export const WorkData = [
         des:'Train an aiDR on an outbound patch, to nurture inbound leads, or to reach out to your long tail of SMB customers at renewal time.'
     },
 ]
+
+export const UserData = [
+    {
+        des:'Qorem ipsum dolor sit , consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+        name:'John Doe',
+        position:'Chief Strategy Officer @ Company'
+    },
+    {
+        des:'Sed ut perspiciatis accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.',
+        name:'James Smith',
+        position:'Marketing Manager @ Company'
+    },
+    {
+        des:'Proin eget tortor . Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat.',
+        name:'Michael Johnson',
+        position:'Software Engineer @ Company'
+    },
+]
