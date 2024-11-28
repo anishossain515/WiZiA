@@ -1,6 +1,7 @@
 import { Button } from "@nextui-org/react";
 import React from "react";
 import { BtnArrow } from "./Utilities/Icons";
+import Btn from "./Common/Btn";
 
 function Hero() {
   return (
@@ -21,12 +22,8 @@ function Hero() {
             patch. It will send personalized sequences to every target contact.
           </p>
 
-          <Button
-            className=" bg-Aqua text-dark_teal font-medium rounded-[100px] py-6 px-8"
-            endContent={<BtnArrow />}
-          >
-            Sign Up for the Beta
-          </Button>
+          <Btn/>
+          
         </div>
       </div>
     </section>
