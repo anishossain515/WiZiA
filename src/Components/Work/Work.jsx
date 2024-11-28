@@ -1,6 +1,6 @@
 import React from 'react'
-import WorkCard from './Common/WorkCard'
-import { WorkData } from './Utilities/Data'
+import WorkCard from './WorkCard'
+import { WorkData } from '../Utilities/Data'
 
 function Work() {
   return (
