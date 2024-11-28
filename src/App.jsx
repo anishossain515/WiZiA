@@ -1,4 +1,5 @@
 import './App.css'
+import Footer from './Components/Footer';
 import Hero from './Components/Hero';
 import NavbarArea from './Components/Navbar';
 import NewEra from './Components/NewEra';
@@ -21,6 +22,7 @@ function App() {
         <Rest/>
         <NewEra/>
       </div>
+      <Footer/>
     </main>
   )
 }
