@@ -23,7 +23,7 @@ useEffect(()=>{
 
       <p className="text-white md:text-[32px] text-[22px] font-light sm:max-w-[950px] max-w-[320px] mx-auto text-center">{des}</p>
 
-      <div>
+      <div className="space-y-2">
         <p className="text-Aqua font-semibold sm:text-2xl text-xl text-center">{name}</p>
         <p className="text-[#96ACAF] md:text-[20px] text-sm">{position}</p>
       </div>

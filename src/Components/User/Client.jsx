@@ -6,11 +6,15 @@ function Client() {
   const [currentIndx, setCurrentIndex] = useState(0);
 
   const preIndex = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? UserData.length - 1 : prevIndex - 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? UserData.length - 1 : prevIndex - 1
+    );
   };
 
   const nextIndex = () => {
-    setCurrentIndex((nextIndex) => (nextIndex === UserData.length - 1 ? 0 : nextIndex + 1));
+    setCurrentIndex((nextIndex) =>
+      nextIndex === UserData.length - 1 ? 0 : nextIndex + 1
+    );
   };
 
   const { des, name, position } = UserData[currentIndx];
@@ -20,7 +24,9 @@ function Client() {
       <div className="py-24 2xl:px-[120px] px-8 flex items-center gap-24">
         <button
           onClick={preIndex}
-          className="p-3 bg-[#1e3e43] rounded-[8px] cursor-pointer xl:block hidden"
+          className="p-3 bg-[#1e3e43] rounded-[8px] cursor-pointer xl:block hidden 
+             hover:bg-[#2b5961] hover:scale-105 hover:shadow-lg 
+             transition-all duration-300 ease-in-out"
         >
           <img src="/Vector1.png" alt="Previous" />
         </button>
@@ -38,7 +44,8 @@ function Client() {
 
         <button
           onClick={nextIndex}
-          className="p-3 bg-[#1e3e43] rounded-[8px] cursor-pointer  xl:block hidden"
+          className="p-3 bg-[#1e3e43] rounded-[8px] cursor-pointer xl:block hidden 
+             transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-[#2b555b]"
         >
           <img src="/Vector2.png" alt="Next" />
         </button>
