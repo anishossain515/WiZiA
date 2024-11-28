@@ -36,7 +36,7 @@ function NavbarArea() {
       <NavbarContent className="text-white hidden md:flex cursor-pointer">
         {NavbarItems.map((item, index) => (
           <NavbarItem key={index}>
-            <Link to={item.path} className="text-white">
+            <Link to={item.path} className="text-white hover:text-Aqua hover:underline hover:underline-offset-2 hover:scale-105 transition-all duration-300 ease-in-out">
               {item.name}
             </Link>
           </NavbarItem>
@@ -72,7 +72,7 @@ function NavbarArea() {
       <NavbarMenu className="bg-[#063740]">
         {NavbarItems.map((item, index) => (
           <NavbarMenuItem key={index}>
-            <Link to={item.path} className="text-white">
+            <Link to={item.path} className="text-white hover:text-Aqua hover:underline hover:underline-offset-2 hover:scale-105 transition-all duration-300 ease-in-out ">
               {item.name}
             </Link>
           </NavbarMenuItem>
