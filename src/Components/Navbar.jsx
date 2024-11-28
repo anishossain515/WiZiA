@@ -28,7 +28,7 @@ function NavbarArea() {
       </NavbarBrand>
 
       {/* NavbarList */}
-      <NavbarContent className="text-white hidden md:flex">
+      <NavbarContent className="text-white hidden md:flex cursor-pointer">
         {NavbarItems.map((item, index) => (
           <NavbarItem key={index}>{item}</NavbarItem>
         ))}

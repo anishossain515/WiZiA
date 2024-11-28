@@ -33,3 +33,19 @@ export const UserData = [
         position:'Software Engineer @ Company'
     },
 ]
+
+
+export const RestData = [
+    {
+        percent:'32%',
+        des:'Improvement in Open Rates'
+    },
+    {
+        percent:'75%',
+        des:'Improvement in Ramp Time'
+    },
+    {
+        percent:'35%',
+        des:'Improvement in Meetings Booked'
+    },
+]
